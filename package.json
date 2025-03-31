@@ -1,12 +1,47 @@
 {
   "name": "react-hookit",
   "version": "1.0.0",
-  "description": "",
+  "description": "React Hooks",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "publish": "pnpm build && npm publish",
+    "lint": "eslint packages/**/*.{ts,tsx}",
+    "lint:fix": "eslint packages/**/*.{ts,tsx} --fix",
+    "test": "vitest"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "keywords": [
+    "react",
+    "hooks",
+    "react-hooks",
+    "react-hookit",
+    "react-native",
+    "react-hookit-hooks",
+    "react-native-hooks",
+    "react-native-hookit",
+    "react-native-hookit-hooks",
+    "useState",
+    "useEffect",
+    "useRef",
+    "useCallback",
+    "useMemo",
+    "useReducer",
+    "useContext",
+    "useLayoutEffect"
+  ],
+  "author": "eggmun98 <eggmun98@gmail.com> (https://github.com/eggmun98)",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/react": "^19.0.12",
+    "@typescript-eslint/eslint-plugin": "^8.28.0",
+    "@typescript-eslint/parser": "^8.28.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^9.23.0",
+    "eslint-plugin-react": "^7.37.4",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "jsdom": "^26.0.0",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.2",
+    "vitest": "^3.0.9"
+  }
 }
